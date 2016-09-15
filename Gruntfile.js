@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         qunit: {
-            files: ['test/index.html']
+            all: ['test/index.html']
         },
         clean: {
             dev: {
