@@ -2,7 +2,7 @@
   "name": "doesuanota",
   "version": "0.0.1",
   "scripts": {
-    "test": "node_modules/mocha/bin/mocha"
+    "test": "mocha"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
