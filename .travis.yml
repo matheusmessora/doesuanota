@@ -5,4 +5,4 @@ node_js:
 before_script:
   - npm install grunt-cli -g
 
-script: phantomjs grunt test --verbose --force
+script: grunt test --verbose --force
