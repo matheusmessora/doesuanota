@@ -21,6 +21,7 @@
     "grunt-mustache-render": "^1.9.0",
     "grunt-rev": "^0.1.0",
     "grunt-strip": "^0.2.1",
-    "grunt-usemin": "^3.1.0"
+    "grunt-usemin": "^3.1.0",
+    "qunitjs": "^2.0.1"
   }
 }
