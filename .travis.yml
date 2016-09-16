@@ -19,7 +19,7 @@ before_deploy:
 deploy:
   provider: s3
   bucket: "doesuanota.com.br"
-  access_key_id: ${deploy.access_key_id}
-  secret_access_key: ${deploy.secret_access_key}
+  access_key_id: $deploy.access_key_id
+  secret_access_key: $deploy.secret_access_key
   skip_cleanup: true
   local_dir: dist
