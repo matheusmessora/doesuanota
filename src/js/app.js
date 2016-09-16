@@ -5,12 +5,12 @@ var APP = (function () {
         function doParticipate(e) {
             e.preventDefault();
 
-            var email = $("#i-email-value").val()
+            var email = $("#i-email-value").val();
 
             if (strings.isBlank(email)) {
-                view.markError("email-value", "E-mail inválido")
+                view.markError("email-value", "E-mail inválido");
             } else {
-                participate.send(email)
+                participate.send(email);
             }
         }
 

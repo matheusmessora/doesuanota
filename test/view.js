@@ -6,6 +6,5 @@ QUnit.test( "Should add message inside divElement", function( assert ) {
     view.markError(field, "expected");
 
     var actual = $("#e-" + field).html();
-
     assert.equal(actual, "expected");
 });
