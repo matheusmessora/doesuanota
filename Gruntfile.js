@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                 src: ["dev"]
             },
             build: {
-                src: ["dist", "test", ".tmp", "tmp", "dest", ".tmp"]
+                src: ["dist", ".tmp", "tmp", "dest", ".tmp"]
             },
 
             trash: {
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         },
 
         useminPrepare: {
-            src: ['src/includes/head.html', 'src/includes/footer.html'],
+            src: ['src/index.html'],
             options: {
                 dest: 'dev', // destino arquivos concatenados -> unificados
                 root: 'src'
@@ -97,7 +97,7 @@ module.exports = function (grunt) {
                     {
                         cwd: 'dev/',
                         expand: true,
-                        src: ['*.html', 'resources/**'],
+                        src: ['*.html', 'css/**', 'js/**'],
                         dest: 'dist'
                     }
                 ]
@@ -130,7 +130,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
 
         concat: {
             analytics: {
