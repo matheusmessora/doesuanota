@@ -14,7 +14,7 @@ before_install:
   - export PATH=$PWD/travis-phantomjs:$PATH
 
 before_deploy:
-  - grunt dist
+  - grunt package
 
 deploy:
   provider: s3
