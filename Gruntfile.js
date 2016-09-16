@@ -20,9 +20,11 @@ module.exports = function (grunt) {
     // Define the configuration for all the tasks
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        qunit: {
-            all: ['test/index.html']
-        },
+        qunit: [
+            'test/participate.html',
+            'test/strings.html',
+            'test/view.html'
+        ],
         clean: {
             dev: {
                 src: ["dev"]

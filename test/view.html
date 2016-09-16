@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../node_modules/qunitjs/qunit/qunit.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<form role="form">
+	<div class="form-group" id="g-email-value">
+		<label for="i-email-value" class="control-label">Email</label>
+		<input type="text" class="form-control" id="i-email-value">
+		<span id="e-email-value" class="help-block"></span>
+	</div>
+
+	<a id="participate" href="#" class="btn btn-lg myButton donateNowBtn">ENVIAR</a>
+	<img id="participate-loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" height="42"
+	     width="42" style="display:none"/>
+</form>
+
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+
+
+<script src="../node_modules/qunitjs/qunit/qunit.js"></script>
+<script src="../src/js/modules/view/view.js"></script>
+<script src="./view.js"></script>
+</body>
+</html>

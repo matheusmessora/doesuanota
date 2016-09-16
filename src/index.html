@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Doe sua nota fiscal</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Language" content="pt-br">
+
+	<!-- Bootstrap -->
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- build:css resources/css/style.min.css -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- endbuild -->
+</head>
+
+<body>
+
+<!-- SITE CONTENT -->
+<div class="intro">
+	<div class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-left">
+					<h1>Faça sua parte! Doe!</h1>
+					<h5>Doe sua nota fiscal para sua instituição favorita.</h5>
+					<p><a class="btn btn-lg myButton donateNowBtn" href="#doar"><i
+							class="glyphicon glyphicon-chevron-down"></i> PARTICIPE</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="brands">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul>
+					<li>
+						<img src="http://www.blogdomadeira.com.br/wp-content/uploads/2013/08/Hospital-de-C%C3%A2ncer-de-Barretos-logo.jpg"
+						     class="img-responsive" heigth="60" width="40"/>
+					</li>
+					<li>
+						<img src="http://3.bp.blogspot.com/-AIIgVtP7qgo/T-hhAIQ5A-I/AAAAAAAAAkc/Yt0zrtIcvUU/s1600/aacd.jpg"
+						     class="img-responsive" heigth="60" width="40"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="container">
+
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="small-text-medium uppercase colored-text">SOBRE NÓS</div>
+				<h2>Queremos facilitar o seu modo de doar</h2>
+				<div class="divisor divisor-line colored-line"></div>
+				<p class="text-left">Doe sua nota fiscal sem esforço. Informe os dados necessários. Nós nos encarregamos
+					do resto.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="thumbnail">
+					<i class="glyphicon glyphicon-user colored-text i-lg"></i>
+					<div class="caption">
+						<h3 class="colored-text">Peça a Nota Fiscal</h3>
+						<p>Solicite ao estabelecimento que gere uma nota fiscal sem o CPF.
+							<br/><strong>Faça uma boa ação.</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-lg-4">
+				<div class="thumbnail">
+					<i class="glyphicon glyphicon-send colored-text i-lg"></i>
+					<div class="caption">
+						<h3 class="colored-text">Envie os dados</h3>
+						<p>Envie a nota fiscal através do aplicativo ou pelo site.
+							<br/><strong>Totalmente gratuito.</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="thumbnail">
+					<i class="glyphicon glyphicon-heart colored-text i-lg"></i>
+					<div class="caption">
+						<h3 class="colored-text">Nós fazemos o resto</h3>
+						<p>Escolha a instituição e relaxe, que agora é nossa parte. Enviaremos a nota fiscal para sua
+							<strong>entidade favorita.</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+<div class="content content-white">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="uppercase colored-text">COMO DOAR</div>
+				<h2>Fique por dentro das novidades</h2>
+				<div class="divisor divisor-line colored-line"></div>
+				<p class="text-left">O app Doesuanota ainda está em desenvolvimento. <br/>Participe da nossa
+					<strong>lista de e-mail para ficar por dentro das novidades e ser um dos primeiros a utilizar nossos
+						serviços</strong>.</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12 text-left">
+				<form role="form">
+					<div class="form-group" id="g-email-value">
+						<label for="i-email-value" class="control-label">Email</label>
+						<input type="text" class="form-control" id="i-email-value">
+						<span id="e-email-value" class="help-block"></span>
+					</div>
+
+					<a id="participate" href="#" class="btn btn-lg myButton donateNowBtn">ENVIAR</a>
+					<img id="participate-loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" height="42"
+					     width="42" style="display:none"/>
+				</form>
+				<br />
+			</div>
+		</div>
+		<div class="clearfix"></div>
+
+
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+
+<!-- build:js js/app.min.js -->
+<script src="js/modules/strings/strings.js"></script>
+<!--<script src="js/modules/participate/participate.js"></script>-->
+<!--<script src="js/modules/view/view.js"></script>-->
+<script src="js/app.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+	APP.init()
+</script>
+
+</body>
+
+</html>
