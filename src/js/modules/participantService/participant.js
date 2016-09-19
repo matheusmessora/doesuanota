@@ -1,4 +1,4 @@
-var participate = (function () {
+var participant = (function () {
 
     function send(email, callback) {
         var json = {
@@ -6,7 +6,7 @@ var participate = (function () {
         };
 
         $.ajax({
-            url: "http://api.doesuanota.com.br/participate",
+            url: "http://api.doesuanota.com.br/participant",
             type: "POST",
             data: json,
             contentType: "application/json",
