@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         qunit: [
-            'test/participate.html',
+            'test/participant.html',
             'test/strings.html',
             'test/view.html'
         ],

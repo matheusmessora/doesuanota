@@ -10,7 +10,7 @@ QUnit.test( "Should return callback without err on success ajax", function( asse
         options.success({});
     };
 
-    participate.send("a", function(err) {
+    participant.send("a", function(err) {
         assert.ok(err === undefined);
     });
 });
@@ -26,7 +26,7 @@ QUnit.test( "Should return callback with ERR on failed ajax", function( assert )
         options.error({});
     };
 
-    participate.send("a", function(err) {
+    participant.send("a", function(err) {
         assert.equal(err, 'Falha ao enviar email a para participar');
     });
 });
