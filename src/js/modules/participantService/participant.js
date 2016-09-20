@@ -8,8 +8,8 @@ var participant = (function () {
         $.ajax({
             url: "http://api.doesuanota.com.br/participant",
             type: "POST",
-            data: json,
-            contentType: "application/json",
+            data: JSON.stringify(json),
+            contentType: "application/json; charset=utf-8",
             success: function(data, textStatus, jqXHR) {
                 callback()
             },
