@@ -10,7 +10,11 @@ var APP = (function () {
             if (strings.isBlank(email)) {
                 view.markError("email-value", "E-mail inválido");
             } else {
-                participant.send(email);
+                participant.send(email, function(err){
+                    if(err){
+                        view.markError("email-value", err);
+                    }
+                });
             }
         }
 
