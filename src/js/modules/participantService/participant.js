@@ -6,7 +6,7 @@ var participant = (function () {
         };
 
         $.ajax({
-            url: "http://api.doesuanota.com.br/participant",
+            url: "http://api.doesuanota.com.br/participants",
             type: "POST",
             data: JSON.stringify(json),
             contentType: "application/json; charset=utf-8",

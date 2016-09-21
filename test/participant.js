@@ -2,7 +2,7 @@ QUnit.module( "participate group" );
 QUnit.test( "Should return callback without err on success ajax", function( assert ) {
 
     $.ajax = function(options) {
-        assert.equal(options.url, "http://api.doesuanota.com.br/participant");
+        assert.equal(options.url, "http://api.doesuanota.com.br/participants");
         assert.equal(options.type, "POST");
         assert.deepEqual(options.data, JSON.stringify({
             email: "a"
@@ -18,7 +18,7 @@ QUnit.test( "Should return callback without err on success ajax", function( asse
 QUnit.test( "Should return callback with ERR on failed ajax", function( assert ) {
 
     $.ajax = function(options) {
-        assert.equal(options.url, "http://api.doesuanota.com.br/participant");
+        assert.equal(options.url, "http://api.doesuanota.com.br/participants");
         assert.equal(options.type, "POST");
         assert.deepEqual(options.data, JSON.stringify({
             email: "a"
