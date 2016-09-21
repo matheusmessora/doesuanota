@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Doe sua nota fiscal</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Language" content="pt-br">
+
+	<!-- Bootstrap -->
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+
+	<!-- build:css css/style.min.css -->
+	<link href="css/main.css" rel="stylesheet">
+	<!-- endbuild -->
+</head>
+
+<body>
+
+<!-- SITE CONTENT -->
+<div class="intro">
+	<div class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-left">
+					<h1>Faça sua parte! Doe!</h1>
+					<h5>Doe sua nota fiscal, de maneira fácil e segura para sua instituição favorita.</h5>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="brands">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<ul>
+					<li>
+						<img src="http://www.blogdomadeira.com.br/wp-content/uploads/2013/08/Hospital-de-C%C3%A2ncer-de-Barretos-logo.jpg"
+						     class="img-responsive" heigth="60" width="40"/>
+					</li>
+					<li>
+						<img src="http://3.bp.blogspot.com/-AIIgVtP7qgo/T-hhAIQ5A-I/AAAAAAAAAkc/Yt0zrtIcvUU/s1600/aacd.jpg"
+						     class="img-responsive" heigth="60" width="40"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="small-text-medium uppercase colored-text">FEEDBACK</div>
+				<h2>Queremos saber sua opinião</h2>
+				<div class="divisor divisor-line colored-line"></div>
+				<p>Preencha o formulário a seguir com a sua opinião, assim poderemos melhorar ainda mais nossos serviços.</p>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-lg-12 text-left">
+				<form role="form">
+					<div class="form-group" id="g-question1-value">
+						<label for="i-question1-value" class="control-label">O que achou de nosso site?</label>
+						<textarea class="form-control" rows="5" id="i-question1-value"></textarea>
+						<span id="e-question1-value" class="help-block"></span>
+					</div>
+					<div class="form-group" id="g-question2-value">
+						<label class="control-label">Qual a probabilidade de você recomendar nossos serviços a alguém?</label>
+						<br />
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" value="4">
+								Muito Provável
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" value="3">
+								Provável
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" value="2">
+								Baixa
+							</label>
+						</div>
+						<div class="radio">
+							<label>
+								<input type="radio" name="optionsRadios" value="1">
+								Nenhuma
+							</label>
+						</div>
+						<span id="e-question2-value" class="help-block"></span>
+					</div>
+
+					<a id="feedbackAction" href="#" class="btn btn-lg myButton donateNowBtn">ENVIAR</a>
+					<img id="participate-loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" height="42"
+					     width="42" style="display:none"/>
+				</form>
+				<br />
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+
+<!-- build:js js/app.min.js -->
+<script src="js/modules/strings/strings.js"></script>
+<script src="js/modules/participantService/participant.js"></script>
+<script src="js/modules/view/view.js"></script>
+<script src="js/app.js"></script>
+<!-- endbuild -->
+
+<script type="text/javascript">
+	APP.init()
+</script>
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-47755345-7', 'auto');
+	ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
