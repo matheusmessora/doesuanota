@@ -12,8 +12,7 @@ var INDEX = (function () {
             } else {
                 participant.send(email, function(err){
                     if(err){
-                        VIEW.markError("email-value", err);
-                        return;
+                        return VIEW.markError("email-value", err);
                     }
 
                     $("#participant-form-row").hide('fast');
