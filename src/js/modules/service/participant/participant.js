@@ -14,7 +14,15 @@ var participant = (function () {
                 callback()
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                callback('Falha ao enviar email ' + email)
+                var msg = 'Falha ao enviar email ' + email;
+                if(jqXHR.status == 400){
+                    console.log("BAD REQUEST", jqXHR.responseJSON)
+                    msg = MESSAGE.get(jqXHR.responseJSON.code);
+                }else {
+                    console.warn(jqXHR.status, jqXHR.responseJSON)
+                }
+
+                callback(msg)
             }
         });
     }

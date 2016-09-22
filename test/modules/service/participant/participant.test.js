@@ -37,3 +37,27 @@ QUnit.test( "Should return callback with ERR on failed ajax", function( assert )
         assert.equal(err, 'Falha ao enviar email a');
     });
 });
+
+QUnit.test( "Should return callback with message erro on bad request ajax", function( assert ) {
+
+    CONFIG = {
+        apiDomain: "http://api.doesuanota.com.br"
+    };
+    $.ajax = function(options) {
+        assert.equal(options.url, "http://api.doesuanota.com.br/participants");
+        assert.equal(options.type, "POST");
+        assert.deepEqual(options.data, JSON.stringify({
+            email: "a"
+        }));
+        options.error({
+            status: 400,
+            responseJSON: {
+                code: "participant-already-registered"
+            }
+        });
+    };
+
+    participant.send("a", function(err) {
+        assert.equal(err, 'E-mail já cadastrado');
+    });
+});
