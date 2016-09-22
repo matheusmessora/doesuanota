@@ -86,7 +86,7 @@ ul,
     font-size: 14px;
     text-decoration: none;
 }
-.myButton:hover {
+.myButton:hover, .myButton:focus {
     background-color: #f24437;
     color: #FFFFFF;
 }

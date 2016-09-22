@@ -22,7 +22,16 @@ var INDEX = (function () {
             }
         }
 
+        function disableEnterButton(){
+            $("#i-email-value").keyup(function(event){
+                if(event.keyCode == 13){
+
+                }
+            });
+        }
+
         $('#participate').click(doParticipate);
+        disableEnterButton();
     }
 
     /**

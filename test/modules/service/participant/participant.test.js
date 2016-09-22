@@ -34,6 +34,6 @@ QUnit.test( "Should return callback with ERR on failed ajax", function( assert )
     };
 
     participant.send("a", function(err) {
-        assert.equal(err, 'Falha ao enviar email a para participar');
+        assert.equal(err, 'Falha ao enviar email a');
     });
 });

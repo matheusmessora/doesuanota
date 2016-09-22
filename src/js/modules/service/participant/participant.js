@@ -14,7 +14,7 @@ var participant = (function () {
                 callback()
             },
             error: function(jqXHR, textStatus, errorThrown) {
-                callback('Falha ao enviar email ' + email + ' para participar')
+                callback('Falha ao enviar email ' + email)
             }
         });
     }
