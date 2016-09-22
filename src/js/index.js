@@ -1,4 +1,4 @@
-var APP = (function () {
+var INDEX = (function () {
 
     function bindSendButton() {
 
@@ -8,13 +8,18 @@ var APP = (function () {
             var email = $("#i-email-value").val();
 
             if (strings.isBlank(email)) {
-                view.markError("email-value", "E-mail inválido");
+                VIEW.markError("email-value", "E-mail inválido");
             } else {
                 participant.send(email, function(err){
                     if(err){
-                        view.markError("email-value", err);
+                        VIEW.markError("email-value", err);
+                        return;
                     }
+
+                    $("#participant-form-row").hide('fast');
+                    $("#participant-registered-text").show('fast');
                 });
+
             }
         }
 

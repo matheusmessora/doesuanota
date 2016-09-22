@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../../node_modules/qunitjs/qunit/qunit.css">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="qunit"></div>
+
+
+<div id="qunit-fixture">
+
+	<form role="form">
+		<div class="form-group" id="g-question1-value">
+			<label for="i-question1-value" class="control-label">O que achou de nosso site?</label>
+			<textarea class="form-control" rows="5" id="i-question1-value"></textarea>
+			<span id="e-question1-value" class="help-block"></span>
+		</div>
+		<div class="form-group" id="g-question2-value">
+			<label class="control-label">Qual a probabilidade de você recomendar nossos serviços a alguém?</label>
+			<br />
+			<div class="radio">
+				<label>
+					<input type="radio" name="question2Radio" value="4">
+					Muito Provável
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="question2Radio" value="3">
+					Provável
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="question2Radio" value="2">
+					Baixa
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="question2Radio" value="1">
+					Nenhuma
+				</label>
+			</div>
+			<span id="e-question2-value" class="help-block"></span>
+		</div>
+
+		<a id="feedbackAction" href="#" class="btn btn-lg myButton donateNowBtn">ENVIAR</a>
+		<img id="participate-loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" height="42"
+		     width="42" style="display:none"/>
+	</form>
+
+</div>
+
+<script src="../../node_modules/qunitjs/qunit/qunit.js"></script>
+<script src="../../src/js/modules/strings/strings.js"></script>
+<script src="../../src/js/feedback.js"></script>
+<script src="feedback.test.js"></script>
+</body>
+</html>

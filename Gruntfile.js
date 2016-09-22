@@ -21,9 +21,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         qunit: [
-            'test/participant.html',
-            'test/strings.html',
-            'test/view.html'
+            'test/**/*.html'
         ],
         clean: {
             dev: {
@@ -54,7 +52,7 @@ module.exports = function (grunt) {
         },
 
         useminPrepare: {
-            src: ['src/index.html'],
+            src: ['src/includes/head.html', 'src/includes/footer.html'],
             options: {
                 dest: 'dev', // destino arquivos concatenados -> unificados
                 root: 'src'
@@ -97,7 +95,7 @@ module.exports = function (grunt) {
                     {
                         cwd: 'dev/',
                         expand: true,
-                        src: ['*.html', 'css/**', 'js/**'],
+                        src: ['*.html', 'js/**', 'css/**'],
                         dest: 'dist'
                     }
                 ]
@@ -124,18 +122,10 @@ module.exports = function (grunt) {
         // STRIP CONSOLE.log
         strip: {
             main: {
-                src: 'dist/resources/**/*.js',
+                src: 'dist/js/**/*.js',
                 options: {
                     inline: true
                 }
-            }
-        },
-
-        concat: {
-            analytics: {
-                src: ['dev/includes/analytics.html', 'dev/includes/head.html'],
-                dest: 'dev/includes/head.html'
-
             }
         },
 
@@ -170,7 +160,6 @@ module.exports = function (grunt) {
     grunt.registerTask('package', [
         'clean:build',
         'copy:dev',
-        'concat:analytics',
         'includes:dev',
         'useminPrepare',
         'concat:generated',

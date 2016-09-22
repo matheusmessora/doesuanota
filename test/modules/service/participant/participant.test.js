@@ -1,6 +1,10 @@
 QUnit.module( "participate group" );
 QUnit.test( "Should return callback without err on success ajax", function( assert ) {
 
+    CONFIG = {
+        apiDomain: "http://api.doesuanota.com.br"
+    };
+
     $.ajax = function(options) {
         assert.equal(options.url, "http://api.doesuanota.com.br/participants");
         assert.equal(options.type, "POST");
@@ -17,6 +21,9 @@ QUnit.test( "Should return callback without err on success ajax", function( asse
 
 QUnit.test( "Should return callback with ERR on failed ajax", function( assert ) {
 
+    CONFIG = {
+        apiDomain: "http://api.doesuanota.com.br"
+    };
     $.ajax = function(options) {
         assert.equal(options.url, "http://api.doesuanota.com.br/participants");
         assert.equal(options.type, "POST");
