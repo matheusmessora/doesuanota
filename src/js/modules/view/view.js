@@ -15,7 +15,7 @@ var VIEW = (function() {
     function goToSurveyThanks(windowObject){
         if (!windowObject) windowObject = window;
 
-        windowObject.location = "http://www.doesuanota.com.br/thank-you";
+        windowObject.location = "http://www.doesuanota.com.br/thank-you.html";
     }
 
     /**

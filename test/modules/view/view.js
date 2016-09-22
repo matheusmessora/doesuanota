@@ -21,5 +21,5 @@ QUnit.test( "Should redirect to thank you page", function( assert ) {
     var mockWindow = {};
     VIEW.goToHomepage(mockWindow);
 
-    assert.ok(mockWindow.location, "http://www.doesuanota.com.br/thank-you")
+    assert.ok(mockWindow.location, "http://www.doesuanota.com.br/thank-you.html")
 });
