@@ -10,12 +10,14 @@ var SURVEY = (function () {
                 callback()
             },
             error: function(jqXHR, textStatus, errorThrown) {
+                console.log(jqXHR.status, jqXHR.responseJSON)
                 var errorCode = jqXHR.responseJSON.code;
                 var message = MESSAGE.get(errorCode);
                 callback(message)
             }
         });
     }
+
 
     function post(id, json, callback) {
 
