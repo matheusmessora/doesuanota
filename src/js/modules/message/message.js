@@ -1,7 +1,8 @@
 var MESSAGE = (function() {
 
     var messageBundle = {
-        "invalid-token": "Token inválido"
+        "invalid-token": "Token inválido",
+        "participant-already-registered": "E-mail já cadastrado"
     };
 
 
